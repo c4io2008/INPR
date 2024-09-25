@@ -1,14 +1,10 @@
 const prompt = require('prompt-sync')({sigint: true});
 
-var nome = prompt("Digite o seu nome:");
-var anoNascimento = prompt("Digite o ano em que você nasceu:");
-var anoAtual
-var idade
+var nome, idade, idadeDaqui10Anos;
 
- anoAtual = 2024
+nome = prompt("Digite o nome: ");
+idade = Number(prompt("Digite a idade: "));
 
+idadeDaqui10Anos = idade + 10;
 
- idade = anoAtual - anoNascimento;
-
-
-console.log(`Olá, ${nome}, hoje você tem ${idade} anos.`);
+console.log(`Olá ${nome}! Você terá ${idadeDaqui10Anos} anos daqui a 10 anos`);
