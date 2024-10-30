@@ -5,7 +5,7 @@ var temperatura_celsius, temperatura_farenheit;
 
 temperatura_celsius = Number(prompt("<< Digite a temperatura da água em grau Celsius: "));
 
-temperatura_farenheit = ( 9 * temperatura_celsius + 160) ;
+temperatura_farenheit = ( 9 * temperatura_celsius + 160) / 5;
 
 console.log(`Temperatura em Farenheit: ${temperatura_farenheit}`);
 
