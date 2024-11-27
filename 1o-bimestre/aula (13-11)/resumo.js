@@ -13,9 +13,11 @@ for(let i = 8; i >= 0; i--){
     console.log("falta ", i, "dias para o meu aniversario");
 }
 
-let i = 8
 
 console.log("********************")
+
+
+let i = 8
 
 while(i >= 0){
     console.log("falta", i, "dias para o meu aniversario")
