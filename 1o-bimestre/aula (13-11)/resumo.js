@@ -32,7 +32,7 @@ if(temperatura >= 100){
     console.log('A agua entrou em ebulição')
 }else{
     console.log('A agua não entrou em ebulição')
-}*/
+}
 
 const prompt = require("prompt-sync")({sigint:true});
 
@@ -65,3 +65,56 @@ if(mes == 1){
 }else{
     console.log("Numero Invalido")
 }
+
+const prompt = require("prompt-sync")({sigint:true});
+
+var numeroSecreto = 9;
+var chute;
+
+chute = Number(prompt("Chute um numero de 1 a 10:"))
+
+while(true){
+
+    if(chute >= 1 && chute <= 10){
+        if(chute == numeroSecreto){
+            console.log("Vc acertou o numero sequetro!")
+        }else if(chute != numeroSecreto){
+            console.log("tente novamente!")
+        }
+    }else{
+        console.log("Seu numero esta invalido")
+    }
+}
+
+
+
+
+
+const prompt = require("prompt-sync")({sigint:true});
+
+var qtdEstudandes = 0;
+var somaIdade = 0;
+
+while (qtdEstudandes < 3){
+    var idade = parseInt(prompt("digite a idade:"))
+    somaIdade += idade // somaIdade = somaIdade + idade
+    qtdEstudandes++ // qtdEstudantes = qtdEstudantes + 1
+}
+
+console.log("media de idade é " ,somaIdade / 3);
+
+
+}*/
+
+
+
+var i = 0
+
+while(i <= 100){
+    console.log(i)
+    i++
+}
+
+
+
+
