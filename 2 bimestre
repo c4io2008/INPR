@@ -1,0 +1,18 @@
+for(let A = 1; A <= 10; A++){
+    console.log('Tabuada de ', A)
+    for(let I = 1; I <= 10; I++){
+        var J = A * I
+        console.log(A ,'x', I, '=', J)
+    }
+    
+}
+
+
+const prompt = require("prompt-sync")()
+
+let inicio = Number(prompt("Qual o inicio? "))
+let fim = Number(prompt('Qual o final? '))
+
+for(let i = fim; i >= inicio; i--){
+    console.log(i)
+}
