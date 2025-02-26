@@ -1,0 +1,27 @@
+const prompt = require('prompt-sync')()
+
+
+console.log('F = 10 chances, M = 5 chances, D = 3 chances')
+var nivel = prompt('Escolha a dificuldade do seu jogo:  ')
+var numero = 77
+var chance
+
+switch (nivel) {
+    case'F':
+    console.log('Nivel facil')
+    chance = 10
+    break;
+   case 'M':
+    console.log('Nivel Medio')
+    chance = 5
+   default:
+    console.log('Nivel Dificil')
+    chance = 3  
+}
+for (let i = chance; i > 0; i--){
+  var chute = parseInt(prompt('Digite seu chute  '))
+  if(chute == numero){
+      console.log('Você acertou!!')
+      break
+  }
+}
