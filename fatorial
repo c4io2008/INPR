@@ -1,0 +1,8 @@
+const joaninha = require('prompt-sync')()
+
+var numero = parseInt(joaninha('Qual o numero vc quer?  '))
+var resultado = 1
+for (let i = 1; i <= numero;i++) {
+    resultado = resultado * i
+}
+console.log(resultado)
