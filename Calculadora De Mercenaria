@@ -1,0 +1,41 @@
+const prompt = require("prompt-sync")();
+
+console.log('110 <---------> coca cola 2l <--------> valor = 12 reais')
+console.log('111 <---------> Pipo´s <--------> valor = 4 reais')
+console.log('112 <---------> feijão kg <--------> valor = 10.54 reais')
+console.log('113 <---------> café kg <--------> valor = 64.80 reais')
+console.log('137 <---------> arroz kg <--------> valor = 9.50 reais')
+
+var soma = 0
+
+for(;;){
+    var codigo = parseInt(prompt('codigo:  '))
+if(codigo == 0){
+    break
+}
+switch (codigo) {
+    case 110:
+        console.log("coca 2L")
+        soma = soma + 12
+        break
+    case 111:
+        console.log("Pipo")
+        soma = soma + 4
+        break
+    case 112:
+        console.log("Feijao kg")
+        soma = soma + 10.54
+        break    
+    case 113:
+        console.log("coca 2L")
+        soma = soma + 64.80
+        break
+    case 137:
+        console.log("arroz kg")
+        soma = soma + 9.50
+        break   
+    default:
+        break     
+}
+}
+console.log(soma)
