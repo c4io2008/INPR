@@ -1,0 +1,12 @@
+const joaninha = require('prompt-sync')()
+
+var numero = parseInt(joaninha('informe um numero '))
+var soma = 0
+for(;;){
+    var numero = parseInt(joaninha('informe um numero '))
+    soma = soma + numero
+    if(numero < 0){
+        break
+    }
+}
+console.log(soma)
