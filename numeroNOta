@@ -1,0 +1,13 @@
+const joaninha = require('prompt-sync')()
+
+var nota = parseInt(joaninha('Informe a sua nota de 0 a 10: '))
+
+for(;;){
+    var nota = parseInt(joaninha('Informe a sua nota de 0 a 10: '))
+    if(nota >= 0 && nota <= 10){
+        console.log('Numero valido')
+        break
+    }else{
+        console.log('NUMERO DE 0 A 10 SEU IMBECIL!!!')
+    }
+}
