@@ -1,0 +1,37 @@
+const prompt = require('prompt-sync')()
+
+let alunos = parseInt(ana('Quantos alunos tem na turma?: '))
+let reprovados = 0
+let aprovados = 0
+medias = []
+
+for (let i = 0; i < alunos; i++) {
+    console.log('aluno', i + 1)
+    notas = []
+    for (let j = 0; j < 4; j++) {
+        let nota = parseFloat(prompt('(uma por vez) Me diga quais foram as suas notas? '))
+        notas.push(nota)
+    }
+    let soma = 0
+    for (let j = 0; j < notas.length; j++) {
+        soma = soma + notas[j]
+    }
+
+    const media = soma / 4
+    console.log(media)
+    medias.push(soma / 4)
+
+    if (media < 6) {
+        console.log('reprovado')
+        reprovados++
+    } else if (media >= 6) {
+        console.log('aprovado')
+        aprovados++
+    }
+}
+
+notas.sort((a, b) => (a - b))
+console.log('A maior media foi ', medias[medias.length - 1])
+console.log('A menor media foi', medias[0])
+console.log('numero de aprovados :  ', aprovados)
+console.log('numero de aprovados :  ', reprovados)
